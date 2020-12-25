@@ -30,7 +30,6 @@ $(document).ready(function () {
         console.log(this.id);
         console.log(e.target);
 
-
         $('.bar--french .bar--ahead').removeClass('bar--ahead--100');
         $('.bar--french .bar--ahead').width();
         $('.bar--french .bar--ahead').addClass('bar--ahead--100');
@@ -38,7 +37,6 @@ $(document).ready(function () {
         $('.bar--english .bar--ahead').removeClass('bar--ahead--40');
         $('.bar--english .bar--ahead').width();
         $('.bar--english .bar--ahead').addClass('bar--ahead--40');
-
 
         $('.skills-table-headings__heading').each(function (i, obj) {
             if (e.target.id == obj.id) {
@@ -52,13 +50,8 @@ $(document).ready(function () {
 
             if (e.target.id == obj.id && e.target.id == 'heading-2') {
                 $('.skills-table-headings__info-table-content').hide();
-                $('.skills-table-headings__language-table-content').show();
-
             } else {
-
                 $('.skills-table-headings__info-table-content').show();
-                $('.skills-table-headings__language-table-content').hide();
-
             }
         });
     });
