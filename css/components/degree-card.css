@@ -1,0 +1,44 @@
+.degree {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: solid 2px lightgray;
+    border-radius: 10px;
+    width: 15rem;
+    margin: 0 1rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.degree-obtenation-date {
+    margin: 1rem 0;
+    display: block;
+    text-align: center;
+}
+
+.degree__degree-name-and-place {
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.degree__degree-name {
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+}
+
+.degree__skills-list {
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+
+.degree__skill {
+    background-color: rgb(253, 37, 37);
+    color: white;
+    border-radius: 5px;
+    padding: 3px 5px 1px;
+    width: fit-content;
+}

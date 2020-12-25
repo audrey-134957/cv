@@ -1,0 +1,164 @@
+.skills-table {
+    border-radius: 10px;
+    border: solid 2px lightgray;
+    max-width: 40rem;
+}
+
+.skills-table-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 1rem;
+    border-bottom: solid 2px lightgray;
+}
+
+.skills-table-headings__heading {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.skills-table-headings__heading--active {
+    color: black;
+}
+
+.skills-table-contents {
+    padding: 2rem 1rem;
+    position: relative;
+    max-width: 40rem;
+    height: 8rem;
+}
+
+.skills-table-headings__info-table-content,
+.skills-table-headings__languages-table-content {
+    height: 10rem;
+    background-color: white;
+}
+
+.skills-table-headings__languages-table-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    z-index: -5;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.bar {
+ position: relative;
+}
+
+.bar--bk,
+.bar--ahead{
+    border-radius: 50px;
+    height: 10px;
+}
+
+.bar--bk{
+    width: 150px;
+    display: block;
+    background-color: rgb(233, 233, 233);
+}
+
+.bar--ahead{
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: rgb(255, 21, 21);
+}
+
+.bar--ahead--30{
+    width: 30%;
+    animation: progressBar30 1.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.bar--ahead--40{
+    width: 40%;
+    animation: progressBar40 1.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.bar--ahead--50{
+    width: 50%;
+    animation: progressBar50 1.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.bar--ahead--60{
+    width: 60%;
+    animation: progressBar60 1.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.bar--ahead--70{
+    width: 70%;
+    animation: progressBar70 1.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.bar--ahead--100{
+    width: 100%;
+    animation: progressBar100 1.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes progressBar30 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes progressBar40 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes progressBar50 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes progressBar60 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes progressBar70 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes progressBar100 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
